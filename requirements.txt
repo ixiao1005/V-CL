@@ -1,0 +1,9 @@
+numpy
+pandas
+tqdm
+opencv-python
+scipy
+mediapipe
+scikit-learn
+openpyxl
+xgboost
