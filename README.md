@@ -40,12 +40,22 @@ V-CL/
 ---
 
 ## ⚙️ Installation
+### 1. Clone and enter repo:
 ```bash 
 git clone https://github.com/ixiao1005/V-CL.git
 cd V-CL
-pip install -r requirements.txt
 ```
 
+### 2.Create a virtualenv (optional but recommended):
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 3.Install dependencies:
+```
+pip install -r requirements.txt
+```
 ---
 
 ## 📊 Data Format
