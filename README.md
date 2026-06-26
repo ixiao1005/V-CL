@@ -19,7 +19,7 @@ The experiments reported in the manuscript were conducted using the following en
 | SciPy            |                   1.10.1 |
 | MediaPipe        |                  0.10.11 |
 | scikit-learn     |                    1.2.1 |
-| XGBoost          |      `<XGBOOST_VERSION>` |
+| XGBoost          |                    2.0.3 |
 | openpyxl         |                   3.0.10 |
 | tqdm             |                   4.65.2 |
 
