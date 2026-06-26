@@ -4,29 +4,6 @@ This repository provides the code used to extract video-based behavioral feature
 
 The complete methodological details are described in the accompanying manuscript.
 
-## Pipeline
-
-The code implements the following workflow:
-
-```text
-Video files
-    ↓
-Frame-level MediaPipe feature extraction
-    ↓
-Video-level statistical aggregation
-    ↓
-Questionnaire-derived label generation
-    ↓
-Five-fold baseline classification
-```
-
-The classification tasks are performed separately for:
-
-* ICL: Intrinsic Cognitive Load
-* ECL: Extraneous Cognitive Load
-* GCL: Germane Cognitive Load
-
----
 
 ## Computational Environment
 
