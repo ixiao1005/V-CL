@@ -328,14 +328,12 @@ python scripts/train_classifiers.py \
 ## Implemented Models
 
 The following classifiers are included:
-
 * Support Vector Machine;
 * Decision Tree;
 * Random Forest;
 * XGBoost.
 
 The evaluation procedure uses:
-
 * macro precision;
 * macro recall;
 * macro F1-score;
@@ -357,7 +355,7 @@ The frame-level extraction script calculates features related to:
 * body movement;
 * MediaPipe detection validity.
 
-The detailed definitions and calculations are provided in the accompanying manuscript.
+The detailed definitions and calculations are provided in our manuscript.
 
 The aggregation script calculates statistics including:
 
