@@ -2,8 +2,6 @@
 
 This repository provides the code used to extract video-based behavioral features with MediaPipe and evaluate machine-learning baselines for cognitive load classification.
 
-The complete methodological details are described in the accompanying manuscript.
-
 
 ## Computational Environment
 
