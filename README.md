@@ -357,32 +357,6 @@ The frame-level extraction script calculates features related to:
 
 The detailed definitions and calculations are provided in our manuscript.
 
-The aggregation script calculates statistics including:
-
-```text
-mean
-standard deviation
-minimum
-maximum
-range
-10th percentile
-25th percentile
-50th percentile
-75th percentile
-90th percentile
-mean first-order difference
-standard deviation of first-order differences
-```
-
-Example aggregated columns:
-
-```text
-mp_ear_mean
-mp_ear_std
-mp_ear_p50
-mp_ear_diff_mean
-mp_ear_diff_std
-```
 
 ---
 
