@@ -82,7 +82,7 @@ pip install -r requirements.txt
 
 The raw videos contain identifiable facial information and are therefore not included in this public GitHub repository.
 
-The videos are available through the restricted-access dataset repository described in the accompanying manuscript.
+The videos are available through the restricted-access dataset repository described in our manuscript.
 
 After obtaining authorized access, place the video files in:
 
