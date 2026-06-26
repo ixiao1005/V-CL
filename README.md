@@ -36,9 +36,9 @@ V-CL/
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
-│
 ├── data/
 │   ├── videos/
+|   |     └── readme.md
 │   ├── frame_features/
 │   ├── questionnaire/
 │   │   └── questionnaire.xlsx
