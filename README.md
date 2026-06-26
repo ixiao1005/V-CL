@@ -307,7 +307,7 @@ ECL: Q5–Q8
 GCL: Q9–Q12
 ```
 
-The GCL items are not reverse scored.
+
 
 ### Step 4: Train and evaluate classifiers
 
