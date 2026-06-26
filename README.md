@@ -86,15 +86,6 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 4. Check installed versions
-
-```bash
-python --version
-
-pip show numpy pandas opencv-python scipy mediapipe \
-    scikit-learn xgboost openpyxl tqdm
-```
-
 ---
 
 ## Data Access
@@ -249,7 +240,7 @@ python scripts/train_classifiers.py \
 
 ## Running the Complete Pipeline
 
-The complete pipeline requires authorized access to the raw videos and questionnaire data.
+The complete pipeline requires authorized access to the raw videos.
 
 ### Step 1: Extract frame-level features
 
@@ -356,21 +347,10 @@ The following classifiers are included:
 
 The evaluation procedure uses:
 
-* stratified five-fold cross-validation;
-* a fixed random seed;
 * macro precision;
 * macro recall;
 * macro F1-score;
-* accuracy;
-* confusion matrices.
 
-The model configurations and hyperparameter search spaces are defined in:
-
-```text
-scripts/train_classifiers.py
-```
-
-Preprocessing operations, including imputation and feature standardization where applicable, should be fitted using only the training data within each fold.
 
 ---
 
@@ -431,51 +411,6 @@ outputs/
 ```
 
 The corresponding filenames are generated for ECL and GCL when the value of `--label_col` is changed.
-
-### Metrics file
-
-The metrics file contains the fold-level and average classification results.
-
-### Confusion-matrix file
-
-The confusion-matrix file contains the predicted and true class distributions for each evaluated model.
-
-### Excel results file
-
-The Excel workbook provides a consolidated summary of the classification results.
-
----
-
-## Reproducibility
-
-To reproduce the reported results:
-
-1. use Python 3.8.18;
-2. install the exact dependency versions listed in `requirements.txt`;
-3. use the released `video_features.csv` and `labels.csv`;
-4. retain the random seed defined in `train_classifiers.py`;
-5. retain the documented cross-validation configuration;
-6. retain the original feature columns;
-7. use the same model parameters and hyperparameter grids;
-8. do not fit preprocessing operations on the complete dataset before cross-validation.
-
-Small numerical differences may occur across operating systems, processor architectures, or dependency builds.
-
----
-
-## Citation
-
-Please cite the accompanying manuscript when using this repository:
-
-```bibtex
-@article{feng_vcl,
-  title   = {A Video Dataset for Cognitive Load Assessment in Online Learning},
-  author  = {Feng, Zhixiao and Kuang, Ziyi and Yao, Chao},
-  journal = {<JOURNAL>},
-  year    = {<YEAR>},
-  doi     = {<DOI>}
-}
-```
 
 ---
 
