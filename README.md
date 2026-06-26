@@ -1,8 +1,50 @@
 # Video-based Cognitive Load Assessment using MediaPipe
 
 This repository provides a complete pipeline for cognitive load assesment from videos using structured features extracted with MediaPipe and machine learning models.
-
 ---
+## Pipeline
+
+The code implements the following workflow:
+
+Video files
+    ↓
+Frame-level MediaPipe feature extraction
+    ↓
+Video-level statistical aggregation
+    ↓
+Questionnaire-derived label generation
+    ↓
+Five-fold baseline classification
+
+The classification tasks are performed separately for:
+
+ICL: Intrinsic Cognitive Load
+ECL: Extraneous Cognitive Load
+GCL: Germane Cognitive Load
+---
+## Computational Environment
+
+The experiments reported in the accompanying manuscript were conducted
+using the following environment:
+
+- Operating system: Ubuntu 20.04.5 LTS
+- Python: 3.8.18
+- NumPy: 1.24.4
+- pandas: 1.5.1
+- OpenCV-Python: 4.7.0.72
+- SciPy: 1.10.1
+- MediaPipe: 0.10.11
+- scikit-learn: [actual version]
+- XGBoost: [actual version]
+- openpyxl: [actual version]
+
+The MediaPipe feature-extraction and traditional machine-learning
+experiments were executed on the CPU. A GPU is not required.
+
+All Python dependencies and their tested versions are listed in
+`requirements.txt`.
+---
+
 
 ## 📌 Overview
 
