@@ -20,7 +20,6 @@ The experiments reported in the manuscript were conducted using the following en
 | openpyxl         |                   3.0.10 |
 | tqdm             |                   4.65.2 |
 
-The MediaPipe feature-extraction and traditional machine-learning experiments can be executed on a CPU. A GPU is not required.
 
 The tested dependencies are listed in `requirements.txt`.
 
