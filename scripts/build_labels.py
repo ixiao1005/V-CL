@@ -13,7 +13,7 @@ def compute_cognitive_load_labels(
     df["participant_id"] = df["participant_id"].astype(str)
     icl_items = ['Q1', 'Q2', 'Q3', 'Q4']
     ecl_items = ['Q5', 'Q6', 'Q7', 'Q8']
-    gcl_items = ['Q9R', 'Q10R', 'Q11R', 'Q12R']
+    gcl_items = ['Q9', 'Q10', 'Q11', 'Q12']
 
     df['ICL_score'] = df[icl_items].sum(axis=1)
     df['ECL_score'] = df[ecl_items].sum(axis=1)
