@@ -11,7 +11,6 @@ The experiments reported in the manuscript were conducted using the following en
 
 | Software         |                  Version |
 | ---------------- | -----------------------: |
-| Operating system |       Ubuntu 20.04.5 LTS |
 | Python           |                   3.8.18 |
 | NumPy            |                   1.24.4 |
 | pandas           |                    1.5.1 |
