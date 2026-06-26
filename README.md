@@ -1,4 +1,4 @@
-# Video-based Cognitive Load Assesment using MediaPipe
+# Video-based Cognitive Load Assessment using MediaPipe
 
 This repository provides a complete pipeline for cognitive load assesment from videos using structured features extracted with MediaPipe and machine learning models.
 
@@ -6,7 +6,7 @@ This repository provides a complete pipeline for cognitive load assesment from v
 
 ## 📌 Overview
 
-This project proposes a approach for video-based cognitive load assesment.
+This project provides a reproducible pipeline for video-based cognitive load assessment.
 
 We extract structured features from:
 
@@ -25,8 +25,7 @@ V-CL/
 ├── data/
 │   ├── videos/
 │   ├── questionnaire/
-│   │   └── questionnaire_reverse_scored.xlsx
-│   │   └── questionnaire_raw.xlsx
+│   │   └── questionnaire.xlsx
 │   └── labels.csv
 ├── scripts/
 │   ├── extract_features.py
@@ -73,24 +72,12 @@ Supported formats:
 
 The repository have two versions of questionnaire data:
 
-#### (1) Raw Questionnaire Data
+####  Questionnaire Data
 ```
-data/questionnaire/questionnaire_raw.xlsx
-```
-
-This file contains the original responses collected from participants.
-
-
-
-#### (2) Reverse-scored Questionnaire Data
-```
-data/questionnaire/questionnaire_reverse_scored.xlsx
+data/questionnaire/questionnaire.xlsx
 ```
 
-Some questionnaire items are reverse-coded (e.g., Q9–Q12).  
-Before computing cognitive load scores, these items should be transformed so that higher values consistently indicate higher cognitive load.
-
-This repository assumes that reverse scoring has already been applied, and uses this file as input for label generation.
+This file contains the  responses collected from participants.
 
 
 
@@ -137,7 +124,7 @@ python scripts/aggregate_features.py \
 ### Step 3 — Generate Labels
 ```bash
 python scripts/build_labels.py \
-    --input_path data/questionnaire/questionnaire_reverse_scored.xlsx \
+    --input_path data/questionnaire/questionnaire.xlsx \
     --output_path data/labels.csv
 ```
 ### Step 4 — Train Classifiers
